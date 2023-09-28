@@ -12,10 +12,11 @@
     <tr>
     <td> <%= a_director.id %> </td>
     <td> 
-      <img src = "<%= a_director.image %>">
+      <img src = "<%= a_director.image %>" width = "100">
     </td>
     <td> <%= a_director.name %> </td>
     <td> <%= a_director.dob %> </td>
+    <td> <a href ="/directors/<%= a_director.id%>"> Show details </a>         </td>
     </tr>
   
   <%end%>
