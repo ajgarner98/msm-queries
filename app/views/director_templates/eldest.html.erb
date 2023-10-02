@@ -1,9 +1,3 @@
 <h1> Eldest Director </h1>
 
-<% eldest_director = Director.where("dob").minimum("name")%>
-
-
-<% eldest_age = Director.where("dob").minimum("dob").strftime %>
-
-
-The eldest director in our dataset right now is <%=eldest_director%>born on <%=eldest_age%>.
+<%=@eldest.name%>
