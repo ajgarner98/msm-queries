@@ -1,0 +1,8 @@
+<h1> Youngest Director </h1>
+
+<% youngest_director = Director.where("dob").maximum("dob")%>
+
+<% youngest_age = Director.where("dob").maximum("dob") %>
+
+
+The youngest director in our dataset right now is <%=youngest_director%> born on <%=youngest_age%>.
